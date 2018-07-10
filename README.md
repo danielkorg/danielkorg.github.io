@@ -13,5 +13,7 @@ I will post some audio demos soon to demonstrate the greatness of this app!
 
 This is just the very fist, baseline, version. It will be improved!
 
+mac OS and Linux versions coming soon!
+
 -more apps coming soon!
 
