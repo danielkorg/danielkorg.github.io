@@ -15,7 +15,7 @@ Enjoy!
 
 I will post some audio demos soon to demonstrate the greatness of this app!
 
-This is just the very fist, baseline, version. It will be improved!
+This is just the very first, baseline, version. It will be improved!
 
 -more apps coming soon!
 
