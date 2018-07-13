@@ -14,16 +14,13 @@ Small guide on functions:
 1) System requirements:
 
 The program was developed under MATLAB R2018a engine
-and on Windows 7 64-bit system, using 8GB RAM.
+and on Windows 7 64-bit system, using 8GB RAM, then
+ported to mac OS and Linux.
 
-Depending on how popular this becomes, I could easily
-port this to Mac OS or/and Linux.
-
-For now, you will need a Windows operating system with
-64-bit processor and around 8GB RAM. The CPU doesn't have
-to be fast, but keep in mind, the faster it is, the less
-time you have to wait for the algorithm to process the audio
-mixture.
+You will need an operating system with a 64-bit processor
+and around 8GB RAM. The CPU doesn't have to be fast, but keep
+in mind, the faster it is, the less time you have to wait for
+the algorithm to process the audio mixture.
 
 I am using a fast i7 processor and I usually process a 1 minute
 mixture in about 3-4 seconds. Then again, the very first time you
@@ -32,13 +29,19 @@ redo the processing, it will take less time.
 
 If you have MATLAB R2018a, then you are good to go. If not, you don't
 need to buy MATLAB, but instead just need to get the free R2018a
-runtime library for Windows, which you can get from this link:
+runtime library, which you can get from this link:
 
 https://www.mathworks.com/products/compiler/matlab-runtime.html
 
-Make sure to get the correct version: R2018a (9.4) Windows (64-bit)
+Make sure to get the correct version: R2018a (9.4)
+for your operating system.
 
-Then, the application DVA.exe should run if you have the above.
+Linux version might need additional path settings:
+at the end of the Runtime Library installer, follow the
+instructions for the path and then run the file called
+"run_DVA.sh".
+
+Then, the application DVA should run if you have the above.
 If not, contact me on Github or/and email.
 
 -------------------------
