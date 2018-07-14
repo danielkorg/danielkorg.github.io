@@ -50,7 +50,7 @@ If not, contact me on Github or/and email.
 
 This is the main part of this Guide. I will explain what the
 program parameters do and how it affects your mixture for
-separating speech and music. I will also explain how to use
+separating vocals and music. I will also explain how to use
 this program and improve the results of the separation.
 
 First and foremost, this app was developed primarily for speech
@@ -65,7 +65,7 @@ are reconstructed.
 
 It is called Attractor, because the way it isolates the vocal
 component, it does it in VERY high quality, like a magnet while
-keeping away the non-speech elements. The app will improve,
+keeping away the non-vocal elements. The app will improve,
 this is by no means the ONLY or FINAL version of this app.
 
 Keep in mind, this application assumes one MAJOR thing about
@@ -84,14 +84,12 @@ start. Well, let's go step by step of how I use this app and at the
 same time, explain the parameters.
 
 First thing to do is to load/open your stereo WAV file from the upper
-left button called "Open Stereo WAV". Keep in mind, for this version,
-and based on user request, I can make it work with mp3 or other formats.
-Also, you do not have to worry about the stereo WAV sampling frequency
-or/and number of bits. The app works with any combo and outputs the 
-speech and music in the same format as the input signal. So if you opened
-a stereo wav file with 16bit 44.1kHz, the outputs will be 16bit 44.1kHz
-and the two files ADD UP to the original mixture you provided, so no loss
-in audio samples.
+left button called "Open Stereo WAV". Also, you do not have to worry
+about the stereo WAV sampling frequency or/and number of bits. The app
+works with any combo and outputs the vocals and music in the same format
+as the input signal. So if you opened a stereo wav file with 16bit 44.1kHz,
+the outputs will be 16bit 44.1kHz and the two files ADD UP to the original
+mixture you provided, so no loss in audio samples.
 
 To verify the mixture is loaded in the app, click the "Preview Original"
 button at the top to hear the mixture you just loaded. At any time, and
@@ -116,7 +114,7 @@ anyway.
 5 parameters affect the first stage of separation (Step 1):
 
 - Resolution
-If you set to a high resolution, you can suppress more speech. Depending on what you
+If you set to a high resolution, you can suppress more vocals. Depending on what you
 want to achieve with this app, I kept low resolutions also. But generally, you want
 at least 8192 (default).
 
@@ -124,7 +122,7 @@ at least 8192 (default).
 This is sort of the compression of the mixture. If you set it to a high number, for
 example default 5, it will compress the mixture or concentrate it. This is useful
 if the mixture has transient components. It is also useful to suppress ghosting effects
-from the speech. The speech leaks into the music, you hear sort of the ghost of the speech
+from the vocals. The vocals leak into the music, you hear sort of the ghost of the vocals
 signal. Generally, keep it high value.
 
 - Stable Factor
@@ -132,13 +130,13 @@ This factor controls the harmonics of the mixture. You want a decent number here
 not too low. From my own experiments, around 20 is perfect. Again, there are just SO MANY
 possible combinations that maybe you will discover better results than what I did! :)
 
-- Speech Factor
-This factor controls the speech that you will isolate in the first step. This will then
+- Vocal/Speech Factor
+This factor controls the vocal that you will isolate in the first step. This will then
 be processed in the Step 2. Again, from experiments, around half of the value of the
 Stable Factor (10) should be good for most cases, but feel free to try other values!
 
 - Noise Factor
-This factor controls elements that are not considered harmonic, yet don't share speech features.
+This factor controls elements that are not considered harmonic, yet don't share vocal features.
 The default value of 1.3 was found by experimenting, but this is actually an interesting parameter
 that needs more testing, perhaps you will discover something with it!
 
@@ -150,8 +148,8 @@ BUT WAIT!!!!
 Notice the upper right button called "Preview before Step 2" ?
 This is something VERY useful that I put there. Before wasting time in Step 2, why not possibly
 improve Step 1? When you finish processing Step 1, click that button to hear the current
-separation. This will only play the current background, not the speech. This is useful
-to know if you are doing the right thing with the parameters. If you still hear some speech,
+separation. This will only play the current background, not the vocals. This is useful
+to know if you are doing the right thing with the parameters. If you still hear some vocals,
 re-adjust the parameters and click the Step 1 button again to process with the new settings.
 You can do this at any time! And preview before going to Step 2. If you are happy with the
 current results, let's go to the final step, Step 2!
@@ -160,10 +158,10 @@ Step 2 has 3 main parameters and an optional one. Then again, the others are opt
 if you set them to zero.
 
 - Center Resolution
-The mixture will be divided into center and sides. Since speech and almost all singing vocals
-are generally mixed in the center when you listen to a stereo mixture, this is useful to separate
-the side components you do not need. The resolution here has the same meaning as the main resolution
-from Step 1. Higher values give you better results. Then again, experiment on your own!
+The mixture will be divided into center and sides. Since vocals are generally mixed in the
+center when you listen to a stereo mixture, this is useful to separate the side components
+you do not need. The resolution here has the same meaning as the main resolution from Step 1.
+Higher values give you better results. Then again, experiment on your own!
 
 - Center Width
 How much center is extracted? If zero, no center is extracted, not very useful right? Usually speech
@@ -172,7 +170,7 @@ is within a range of 0.1-0.3 while singing vocals can be higher like 0.6-0.8. Tr
 - Bass
 Set to 0, if you don't want to extract any bass components from the background music. Otherwise, try
 to find a decent value. This value is in Hz. Generally, 150Hz makes sense, then again if you hear
-bass coming from speech, then decrease it slightly. This is very easy to understand.
+bass coming from vocals, then decrease it slightly. This is very easy to understand.
 
 - VAD and VAD Threshold
 This is the optional one.
@@ -180,9 +178,9 @@ Vocal Activity Detection (VAD) is the final step after all of these. Keep in min
 Flip the switch to ON if you want to use it for the Step 2 processor.
 
 This is not always useful. It is mainly useful if you still hear low energy components in the isolated
-speech, this can help you remove them and keep the speech. But, this suppression is controlled by the
+vocals, this can help you remove them and keep the vocals. But, this suppression is controlled by the
 Threshold value. The default value works for most cases, not too harsh suppression, not too soft. Be
-really careful how you set this Threshold. Certain values will be too aggressive and cut some speech
+really careful how you set this Threshold. Certain values will be too aggressive and cut some vocal
 samples. Again, only use this if you really feel like it is needed. Keep in mind, this is a first basic
 VAD. I am planning on implementing a better one that works with not just low energy but high energy
 components.
@@ -200,9 +198,9 @@ to really understand everything. I am always discovering new greatness every day
 
 Finally, keep in mind this app will improve. So if you think this is good, just wait....
 On that note, this app is currently not great when a lot of transients (drums) are present
-or/and when the speech in the mixture has a reverb effect applied on it or/and when sound
-effects are randomly inserted or/and overlapping speech. These things will be investigated
-for the next version hopefully.
+or/and when the vocals in the mixture have a reverb effect applied or/and when sound
+effects are randomly inserted or/and the case of overlapping vocals. These things will be
+investigated for the next version hopefully.
 
 If you have suggestions for the app itself, features you want to see, etc, just contact me.
 Github or email.
