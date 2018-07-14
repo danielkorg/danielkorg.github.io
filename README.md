@@ -2,8 +2,8 @@
 **July 9, 2018 - - Deep Vocal Attractor (DVA) v1.0**
 
 Happy to announce the public release (v1.0) of my first program ever!
-Introducing state-of-the-art vocal/music separation app
-*Deep Vocal Attractor*
+
+Introducing state-of-the-art vocal/music separation app *Deep Vocal Attractor*
 
 Make sure to read the documentation [GUIDE](https://raw.githubusercontent.com/danielkorg/danielkorg.github.io/master/GUIDE.txt), will help you a lot!
 
@@ -16,6 +16,8 @@ Enjoy!
 I will post some audio demos soon to demonstrate the greatness of this app!
 
 This is just the very first, baseline, version. It will be improved!
+
+IMPORTANT!!! This initial version is mainly for speech and stereo files. Next versions will be for any type of vocal, speech, singing, etc. The next versions will also be for any number of channels, not just stereo.
 
 -more apps coming soon!
 
