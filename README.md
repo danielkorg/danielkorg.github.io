@@ -5,6 +5,8 @@ Happy to announce the public release (v1.0) of my first program ever!
 
 Introducing state-of-the-art vocal/music separation app *Deep Vocal Attractor*
 
+![DVA](https://raw.githubusercontent.com/danielkorg/danielkorg.github.io/master/currentDVA.png)
+
 Make sure to read the documentation [GUIDE](https://raw.githubusercontent.com/danielkorg/danielkorg.github.io/master/GUIDE.txt), will help you a lot!
 
 Get Windows app from [HERE](https://github.com/danielkorg/danielkorg.github.io/raw/master/DVA.zip)!
