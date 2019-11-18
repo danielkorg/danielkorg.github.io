@@ -3,7 +3,7 @@
 **October 31, 2019 - - November release**
 
 UPDATE: last minute algorithm modification and testing,
-DVA v2 will be released on November 18, 2019.
+DVA v2 will be released on November 19, 2019.
 
 **January 19, 2019 - - Deep Vocal Attractor (DVA) v2.0**
 
