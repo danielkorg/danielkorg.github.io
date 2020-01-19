@@ -1,17 +1,13 @@
 ## Daniel Korg Labs
 
-**October 31, 2019 - - November release**
+**January 19, 2020**
 
-UPDATE: last minute algorithm modification and testing,
-DVA v2 will be released on November 19, 2019.
+DVA v2.0 will be released February 1st 2020.
 
-**January 19, 2019 - - Deep Vocal Attractor (DVA) v2.0**
+I was super busy with all sorts of things and since this
+is a hobby of mine, it wasn't a priority. These final days
+will be spent on some final tests and slight modifications
+of the algorithms, especially for performance/speed.
 
-v2 is coming soon! 
-
-The first version was removed, too many bugs.
-This upcoming version (v2) will be considered 
-the new baseline version instead.
-
-more info coming soon!
+Thank you for being patient with this! 
 
